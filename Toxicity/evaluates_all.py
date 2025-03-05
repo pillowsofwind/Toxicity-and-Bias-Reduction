@@ -19,7 +19,7 @@ toxicity_tokenizer = AutoTokenizer.from_pretrained("facebook/roberta-hate-speech
 toxicity_model = AutoModelForSequenceClassification.from_pretrained("facebook/roberta-hate-speech-dynabench-r4-target").cuda()
     
 toxicity = evaluate.load("toxicity", module_type="measurement", device='cuda')
-# API_KEY = 'AIzaSyDCtVmb3tq3B68JGlstNDpPF4JtWkCDU9g'
+# API_KEY = ''
 # req_items=['TOXICITY','SEVERE_TOXICITY','IDENTITY_ATTACK','INSULT','PROFANITY','THREAT']
 
 # @retry(wait=wait_random_exponential(min=30, max=120), stop=stop_after_attempt(1000))
