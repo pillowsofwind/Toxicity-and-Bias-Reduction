@@ -13,7 +13,7 @@ from utils import *
 os.environ["CUDA_VISIBLE_DEVICES"] = "4"
 
 toxicity = evaluate.load("toxicity", module_type="measurement", device='cuda:3')
-API_KEY = 'AIzaSyBmfVeKuZfIbS9qitoeA0etFLklQz0hkiw'
+API_KEY = ''
 # req_items=['TOXICITY','SEVERE_TOXICITY','IDENTITY_ATTACK','INSULT','PROFANITY','THREAT']
 
 # @retry(wait=wait_random_exponential(min=30, max=120), stop=stop_after_attempt(1000))
